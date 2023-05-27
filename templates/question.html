@@ -1,0 +1,23 @@
+{% extends 'base.html'%}   
+{% block question %}
+<h1>question {{number}}</h1>
+<h3>{{question}}</h3>
+
+{% for choice in choices %}
+<label for={{choice}}>{{choice}}</label>
+<input type="radio" name="answer" value={{choice}}>
+{% endfor %}
+{% endblock%}
+
+
+
+
+
+
+
+
+
+
+
+
+satisfaction_survey.questions[current].question
